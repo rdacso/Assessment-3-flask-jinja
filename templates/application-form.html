@@ -12,16 +12,16 @@ first name, last name, job title, and salary requirements. -->
 <body>
   <h1>New Engineer Application</h1>
   <p>Welcome newly graduated engineers! This form is to get you started on your career search. Please submit it once you have completed all of the fields.</p>
-  <form action='/response' method='POST'>
+  <form action='/response'>
     <fieldset>
       <legend>First Name: </legend><input type='text' class='yellow' name='firstname'><br>
       <b><legend>Last Name: </legend><input type='text' class='yellow' name='lastname'></b><br>
       <legend>Salary Requirement: </legend><input type='number' name='salary'><br>
       <legend>Please select your position: </legend>
         <select name='position'>
-          <option value='software'> Software Engineer </option>
-          <option value='qa'> QA Engineer </option>
-          <option value='product'> Product Manager </option>
+          <option value='Software Engineer'> Software Engineer </option>
+          <option value='QA Engineer'> QA Engineer </option>
+          <option value='Product Manager'> Product Manager </option>
         </select><br>
       <input type='submit' class='yellow'>
     </fieldset>
