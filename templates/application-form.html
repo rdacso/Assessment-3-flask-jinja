@@ -1,17 +1,8 @@
-<!doctype html>
-<html>
-<head>
-    <title>Skills-Web</title>
-    <link rel="stylesheet" href="/static/styles.css">
-</head>
-<body>
 
-<!-- This page needs a form that can capture data about the user's
-first name, last name, job title, and salary requirements. -->
-
-<body>
+{% extends 'base.html' %}
+{% block body %}
   <h1>New Engineer Application</h1>
-  <p>Welcome newly graduated engineers! This form is to get you started on your career search. Please submit it once you have completed all of the fields.</p>
+  <p class='welcome'>Welcome newly graduated engineers! This form is to get you started on your career search. Please submit it once you have completed all of the fields.</p>
   <form action='/response'>
     <fieldset>
       <legend>First Name: </legend><input type='text' class='yellow' name='firstname'><br>
@@ -27,4 +18,4 @@ first name, last name, job title, and salary requirements. -->
     </fieldset>
   </form>
 
-</body>
+{% endblock %}
